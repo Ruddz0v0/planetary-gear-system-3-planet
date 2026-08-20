@@ -1,0 +1,397 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{Planetary Gear System N=3}
+\author{Rudhdam Shende}
+\date{August 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Calculations}
+
+\subsection{\textbf{Tooth Count Compatibility}}
+
+For a simple planetary gear system:
+
+\begin{equation}
+N_r = N_s + 2N_p
+\end{equation}
+
+\begin{equation}
+N_r = 20 + 2(22) = 64
+\end{equation}
+
+Therefore,
+
+\begin{equation}
+N_s = 20,\qquad N_p = 22,\qquad N_r = 64
+\end{equation}
+
+For three planets, the assembly condition is:
+
+\begin{equation}
+\frac{N_s+N_r}{N}
+=
+\frac{20+64}{3}
+=
+28
+\end{equation}
+
+Hence, the three-planet arrangement is compatible.
+
+\subsection{\textbf{Sun Gear ($N_s$ = 20 Teeth)}}
+
+$m = 2$ mm
+
+\textbf{Pitch Diameter}
+
+\begin{equation}
+d_s = mN_s
+\end{equation}
+
+\begin{equation}
+d_s = 2(20) = 40.000\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_s = 20.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{Addendum}
+
+\begin{equation}
+h_a = m
+\end{equation}
+
+\begin{equation}
+h_a = 2.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{Dedendum}
+
+\begin{equation}
+h_f = 1.25m
+\end{equation}
+
+\begin{equation}
+h_f = 2.500\ \mathrm{mm}
+\end{equation}
+
+\textbf{Outside Diameter}
+
+\begin{equation}
+d_{a,s} = m(N_s+2)
+\end{equation}
+
+\begin{equation}
+d_{a,s} = 44.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{Root Diameter}
+
+\begin{equation}
+d_{f,s} = m(N_s-2.5)
+\end{equation}
+
+\begin{equation}
+d_{f,s} = 35.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{Base Diameter}
+
+\begin{equation}
+d_{b,s} = d_s\cos(20^\circ)
+\end{equation}
+
+\begin{equation}
+d_{b,s} = 37.588\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_{b,s} = 18.794\ \mathrm{mm}
+\end{equation}
+
+\textbf{TOOTH THICKNESS AT PITCH CIRCLE}
+
+\begin{equation}
+t = s = \frac{\pi m}{2}
+\end{equation}
+
+\begin{equation}
+t = 3.1416\ \mathrm{mm}
+\end{equation}
+
+\textbf{CIRCULAR PITCH}
+
+\begin{equation}
+p = \pi m
+\end{equation}
+
+\begin{equation}
+p = 6.283\ \mathrm{mm}
+\end{equation}
+
+\textbf{ANGULAR PITCH}
+
+\begin{equation}
+\theta = \frac{360^\circ}{N_s}
+\end{equation}
+
+\begin{equation}
+\theta = 18^\circ
+\end{equation}
+
+
+\subsection{\textbf{Planet Gear ($N_p$ = 22 Teeth)}}
+
+\begin{equation}
+N_p = 22
+\end{equation}
+
+\textbf{PITCH DIAMETER}
+
+\begin{equation}
+d_p = mN_p
+\end{equation}
+
+\begin{equation}
+d_p = 44.000\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_p = 22.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{ADDENDUM / DEDENDUM}
+
+\begin{align}
+h_a &= 2.000\ \mathrm{mm} \quad \text{(Addendum)}\\
+h_f &= 2.500\ \mathrm{mm} \quad \text{(Dedendum)}
+\end{align}
+
+\textbf{OUTSIDE DIAMETER}
+
+\begin{equation}
+d_{a,p} = m(N_p+2)
+\end{equation}
+
+\begin{equation}
+d_{a,p} = 48.000\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_{a,p} = 24.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{ROOT DIAMETER}
+
+\begin{equation}
+d_{f,p} = m(N_p-2.5)
+\end{equation}
+
+\begin{equation}
+d_{f,p} = 39.000\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_{f,p} = 19.500\ \mathrm{mm}
+\end{equation}
+
+\textbf{BASE DIAMETER}
+
+\begin{equation}
+d_{b,p} = d_p\cos(20^\circ)
+\end{equation}
+
+\begin{equation}
+d_{b,p} = 41.346\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_{b,p} = 20.673\ \mathrm{mm}
+\end{equation}
+
+\textbf{CIRCULAR PITCH}
+
+\begin{equation}
+p = \pi m
+\end{equation}
+
+\begin{equation}
+p = 6.283\ \mathrm{mm}
+\end{equation}
+
+\textbf{TOOTH THICKNESS}
+
+\begin{equation}
+t = \frac{\pi m}{2}
+\end{equation}
+
+\begin{equation}
+t = 3.1416\ \mathrm{mm}
+\end{equation}
+
+\textbf{ANGULAR PITCH}
+
+\begin{equation}
+\phi = \frac{360^\circ}{N_p}
+\end{equation}
+
+\begin{equation}
+\phi = 16.3636^\circ
+\end{equation}
+
+
+\newpage
+
+\subsection{\textbf{Ring Gear ($N_r$ = 64 Teeth)}}
+
+\textbf{PITCH DIAMETER}
+
+\begin{equation}
+d_r = mN_r
+\end{equation}
+
+\begin{equation}
+d_r = 2(64)
+\end{equation}
+
+\begin{equation}
+d_r = 128.000\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_r = 64.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{BASE DIAMETER}
+
+\begin{equation}
+d_{b,r} = d_r\cos(20^\circ)
+\end{equation}
+
+\begin{equation}
+d_{b,r} = 120.281\ \mathrm{mm}
+\end{equation}
+
+\begin{equation}
+r_{b,r} = 60.140\ \mathrm{mm}
+\end{equation}
+
+For an internal gear, the tooth geometry is inverted relative to
+an external gear.
+
+\textbf{INSIDE TIP / TOOTH-TIP DIAMETER}
+
+\begin{equation}
+d_{a,r} = d_r - 2m
+\end{equation}
+
+\begin{equation}
+d_{a,r} = 128 - 2(2)
+\end{equation}
+
+\begin{equation}
+d_{a,r} = 124.000\ \mathrm{mm}
+\end{equation}
+
+\textbf{OUTSIDE / ROOT DIAMETER}
+
+\begin{equation}
+d_{f,r} = d_r + 2.5m
+\end{equation}
+
+\begin{equation}
+d_{f,r} = 128 + 2.5(2)
+\end{equation}
+
+\begin{equation}
+d_{f,r} = 133.000\ \mathrm{mm}
+\end{equation}
+
+
+\newpage
+
+\subsection{\textbf{Planet Position}}
+
+\textbf{Centre Distance:}
+
+\begin{align}
+C_{s,p} &= \frac{d_s+d_p}{2}
+\qquad \text{[Sun--Planet]}\\
+&= \frac{40+44}{2}\\
+C_{s,p} &= 42.000\ \mathrm{mm}
+\end{align}
+
+\begin{align}
+C_{p,r} &= \frac{d_r-d_p}{2}
+\qquad \text{[Planet--Ring]}\\
+&= \frac{128-44}{2}\\
+C_{p,r} &= 42.000\ \mathrm{mm}
+\end{align}
+
+\textbf{Carrier Centre Radius:}
+
+\begin{align}
+R_c &= 42.000\ \mathrm{mm}\\
+D_c &= 84.000\ \mathrm{mm}
+\end{align}
+
+
+\subsection{\textbf{Gear Ratio: Sun--Ring}}
+
+With the carrier fixed:
+
+\begin{equation}
+i = \frac{N_r}{N_s}
+\end{equation}
+
+\begin{equation}
+i = \frac{64}{20}
+\end{equation}
+
+\begin{equation}
+\textbf{i = 3.2:1}
+\end{equation}
+
+Using the Willis equation:
+
+\begin{equation}
+\frac{\omega_s-\omega_c}{\omega_r-\omega_c}
+=
+-\frac{N_r}{N_s}
+\end{equation}
+
+For a fixed carrier, $\omega_c=0$:
+
+\begin{equation}
+\frac{\omega_s}{\omega_r}
+=
+-\frac{N_r}{N_s}
+\end{equation}
+
+Therefore,
+
+\textbf{Given:}
+
+\begin{equation}
+\omega_s = 10\ \mathrm{RPM}
+\end{equation}
+
+Since
+
+\begin{equation}
+\omega_r=-\omega_s\frac{N_s}{N_r}
+\end{equation}
+
+\begin{equation}
+\omega_r=-10\frac{20}{64}
+\end{equation}
+
+\begin{equation}
+\boxed{\omega_r=-3.125\ \mathrm{RPM}}
+\end{equation}
+\end{document}
